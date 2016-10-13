@@ -40,7 +40,8 @@ getldsscan
 The output will be a table of distance measurements, intensities, and error
 codes, indexed by scan angle in degrees.
 Angle 0 points in the direction of the front of the robot.
-An example of the outout of this command can be seen [here](example_output/lds_scan.txt)
+An example of the output of this command can be seen [here](example_outputs/lds_scan.txt).
+When plotted, it will produce the below image.
 
 
 # Motion Commands <a name="motion_commands" />
