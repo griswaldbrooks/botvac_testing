@@ -6,7 +6,7 @@ def readme():
         return f.read()
 
 setup(name='botvac_tools',
-      version='0.1',
+      version='0.3',
       description=('A package of utilities for developing'
                    'with the Neato Botvac.'),
       long_description=readme(),
@@ -25,8 +25,7 @@ setup(name='botvac_tools',
       install_requires=[
         'argparse',
         'matplotlib',
-        'numpy',
-        'sys'
+        'numpy'
         ],
       test_suite='nose.collector',
       tests_require=['nose', 'nose-cover3'],
