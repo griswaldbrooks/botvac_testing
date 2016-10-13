@@ -29,4 +29,5 @@ the file.
 to advance the display of each scan.
   - 'd' key will go to the next scan.
   - 'a' key will go to the previous scan.
+
 The scan index will be presented on the terminal.
