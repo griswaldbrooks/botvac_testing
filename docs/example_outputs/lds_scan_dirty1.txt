@@ -1,0 +1,428 @@
+help
+Help - Without any argument, this prints a list of all possible cmds.
+With a command name, it prints the help for that particular command
+Clean - Starts a cleaning by simulating press of start button.
+ClearFiles - Erases Black Box, and other Logs
+DiagTest - Executes different test modes. Once set, press Start button to engage. (Test modes are mutually exclusive.)
+GenerateRobotLinkCode - Generate and send robot linking code to server.
+GetConfiguredWifiNetworks - Get the list of configured wifi networks.
+GetRobotLinkCode - Get the robot linking code
+CancelRobotLink - Cancel link request.
+SetNTPTime - Set system time using the NTP servers (WIFI must be up for this to work)
+GetAccel - Get the Accelerometer readings.
+GetAnalogSensors - Get the A2D readings for the analog sensors.
+GetButtons - Get the state of the UI Buttons.
+GetCalInfo - Prints out the cal info from the System Control Block.
+GetCharger - Get the diagnostic data for the charging system.
+GetDigitalSensors - Get the state of the digital sensors.
+GetErr - Get Error Message.
+GetLDSScan - Get scan packet from LDS.
+GetMotors - Get the diagnostic data for the motors.
+GetSensor - Gets the sensors status ON/OFF (Wall Follower and Ultra Sound Only)
+GetTime - Get Current Scheduler Time.
+GetVersion - Get the version information for the system software and hardware.
+GetWarranty - Get the warranty data.
+GetWifiInfo - Get a list of available wifi networks.
+GetWifiStatus - Get the current status of the wifi.
+GetUserSettings - Get the user settings.
+GetUsage - Get usage settings
+PlaySound - Play the specified sound in the robot.
+SetBatteryTest - Sets California Energy Commission 10-CFR-430 Battery Charging System Test mode.
+SetButton - Simulates a button press.
+SetFuelGauge - Set Fuel Gauge Level.
+SetIEC - Sets the IEC Cleaning Test parameters
+SetLCD - Sets the LCD to the specified display. (TestMode Only)
+SetLED - Sets the specified LED to on,off,blink, or dim. (TestMode Only)
+SetLDSRotation - Sets LDS rotation on or off. Can only be run in TestMode.
+SetMotor - Sets the specified motor to run in a direction at a requested speed. (TestMode Only)
+SetSystemMode - Set the operation mode of the robot. (TestMode Only)
+SetTime - Sets the current day, hour, and minute for the scheduler clock.
+SetUserSettings - Sets user settings
+SetUsage - Sets usage settings
+SetWifi - SetWifi variables
+TestMode - Sets TestMode on or off. Some commands can only be run in TestMode.
+Upload - Uploads new program to the robot.
+getchar
+Label,Value
+FuelPercent,97
+BatteryOverTemp,0
+ChargingActive,0
+ChargingEnabled,1
+ConfidentOnFuel,0
+OnReservedFuel,0
+EmptyFuel,0
+BatteryFailure,0
+ExtPwrPresent,1
+ThermistorPresent,1
+BattTempCAvg,23
+VBattV,16.59
+VExtV,18.92
+Charger_mAH,0
+Discharge_mAH,0
+testmode on
+setldsrotation on
+getldsscan
+AngleInDegrees,DistInMM,Intensity,ErrorCodeHEX
+0,3693,22,0
+1,3726,26,0
+2,3729,22,0
+3,3711,21,0
+4,3739,19,0
+5,3729,23,0
+6,3716,24,0
+7,3752,22,0
+8,3741,18,0
+9,3739,12,0
+10,3716,6,0
+11,0,0,8035
+12,0,0,8035
+13,0,0,8035
+14,0,0,8035
+15,0,0,8003
+16,0,0,8035
+17,0,0,8035
+18,3466,7,0
+19,0,0,8003
+20,3210,13,0
+21,0,0,8035
+22,0,0,8035
+23,0,0,8035
+24,0,0,8035
+25,0,0,8003
+26,0,0,8035
+27,16791,29,0
+28,16788,34,0
+29,16784,43,0
+30,16782,75,0
+31,396,127,0
+32,394,160,0
+33,16787,33,0
+34,16791,36,0
+35,16793,24,0
+36,0,0,8035
+37,0,0,8035
+38,0,0,8035
+39,515,65,0
+40,0,0,8003
+41,0,0,8035
+42,4498,8,0
+43,4465,11,0
+44,4263,14,0
+45,0,0,8035
+46,0,0,8035
+47,0,0,8035
+48,0,0,8035
+49,0,0,8003
+50,0,0,8021
+51,0,0,8035
+52,0,0,8035
+53,0,0,8035
+54,0,0,8003
+55,0,0,8035
+56,0,0,8035
+57,850,156,0
+58,0,0,8003
+59,825,164,0
+60,0,0,8035
+61,0,0,8035
+62,0,0,8035
+63,0,0,8035
+64,0,0,8003
+65,0,0,8035
+66,0,0,8035
+67,782,55,0
+68,0,0,8003
+69,761,402,0
+70,755,405,0
+71,751,427,0
+72,746,404,0
+73,746,174,0
+74,798,110,0
+75,854,69,0
+76,964,62,0
+77,961,89,0
+78,976,230,0
+79,969,113,0
+80,966,94,0
+81,0,0,8035
+82,0,0,8035
+83,0,0,8035
+84,0,0,8035
+85,0,0,8003
+86,16752,33,0
+87,16750,47,0
+88,16749,89,0
+89,371,551,0
+90,365,165,0
+91,16749,64,0
+92,16751,31,0
+93,0,0,8035
+94,16761,37,0
+95,16800,44,0
+96,963,63,0
+97,967,46,0
+98,0,0,8035
+99,0,0,8035
+100,0,0,8035
+101,0,0,8035
+102,0,0,8003
+103,0,0,8035
+104,0,0,8002
+105,0,0,8035
+106,16756,58,0
+107,16730,31,0
+108,16712,34,0
+109,16697,77,0
+110,16681,111,0
+111,16667,66,0
+112,0,0,8035
+113,0,0,8035
+114,249,1947,0
+115,0,0,8035
+116,0,0,8035
+117,0,0,8035
+118,0,0,8035
+119,0,0,8003
+120,0,0,8035
+121,0,0,8035
+122,298,182,0
+123,0,0,8003
+124,289,162,0
+125,0,0,8035
+126,0,0,8035
+127,0,0,8035
+128,0,0,8035
+129,0,0,8003
+130,0,0,8035
+131,0,0,8035
+132,0,0,8035
+133,0,0,8035
+134,0,0,8003
+135,0,0,8035
+136,0,0,8035
+137,0,0,8035
+138,0,0,8035
+139,0,0,8003
+140,0,0,8035
+141,0,0,8035
+142,0,0,8035
+143,0,0,8035
+144,0,0,8003
+145,0,0,8035
+146,0,0,8035
+147,0,0,8035
+148,0,0,8035
+149,0,0,8035
+150,0,0,8035
+151,0,0,8003
+152,0,0,8035
+153,0,0,8035
+154,0,0,8035
+155,0,0,8035
+156,0,0,8003
+157,0,0,8035
+158,0,0,8035
+159,0,0,8035
+160,0,0,8035
+161,0,0,8035
+162,0,0,8003
+163,0,0,8035
+164,0,0,8035
+165,0,0,8035
+166,0,0,8035
+167,0,0,8003
+168,0,0,8035
+169,0,0,8035
+170,0,0,8035
+171,0,0,8035
+172,0,0,8035
+173,0,0,8035
+174,0,0,8035
+175,0,0,8003
+176,0,0,8035
+177,0,0,8035
+178,0,0,8035
+179,0,0,8035
+180,0,0,8035
+181,0,0,8003
+182,0,0,8035
+183,0,0,8035
+184,0,0,8035
+185,0,0,8035
+186,0,0,8035
+187,0,0,8003
+188,0,0,8035
+189,0,0,8035
+190,0,0,8035
+191,0,0,8035
+192,0,0,8035
+193,0,0,8003
+194,0,0,8035
+195,0,0,8035
+196,0,0,8035
+197,0,0,8035
+198,0,0,8035
+199,0,0,8035
+200,0,0,8003
+201,0,0,8035
+202,0,0,8035
+203,0,0,8035
+204,0,0,8035
+205,0,0,8035
+206,0,0,8003
+207,0,0,8035
+208,0,0,8035
+209,0,0,8035
+210,0,0,8035
+211,0,0,8035
+212,0,0,8035
+213,0,0,8003
+214,0,0,8035
+215,0,0,8035
+216,0,0,8035
+217,0,0,8035
+218,0,0,8035
+219,0,0,8003
+220,0,0,8035
+221,0,0,8035
+222,0,0,8035
+223,0,0,8035
+224,0,0,8035
+225,0,0,8003
+226,0,0,8035
+227,0,0,8035
+228,0,0,8035
+229,0,0,8035
+230,0,0,8035
+231,0,0,8003
+232,0,0,8035
+233,0,0,8035
+234,0,0,8035
+235,0,0,8035
+236,0,0,8035
+237,0,0,8003
+238,0,0,8035
+239,0,0,8035
+240,0,0,8035
+241,0,0,8035
+242,0,0,8021
+243,0,0,8035
+244,0,0,8035
+245,0,0,8035
+246,0,0,8035
+247,0,0,8003
+248,0,0,8035
+249,0,0,8035
+250,0,0,8035
+251,0,0,8035
+252,0,0,8003
+253,0,0,8035
+254,0,0,8035
+255,402,81,0
+256,0,0,8003
+257,463,203,0
+258,501,265,0
+259,0,0,8035
+260,16976,34,0
+261,0,0,8035
+262,325,632,0
+263,797,81,0
+264,0,0,8035
+265,0,0,8035
+266,0,0,8021
+267,565,170,0
+268,545,425,0
+269,537,471,0
+270,535,255,0
+271,530,112,0
+272,530,525,0
+273,534,510,0
+274,542,412,0
+275,551,407,0
+276,1597,41,0
+277,0,0,8035
+278,0,0,8035
+279,1592,50,0
+280,0,0,8003
+281,1609,88,0
+282,323,810,0
+283,1627,63,0
+284,1630,93,0
+285,1639,58,0
+286,1641,103,0
+287,1649,99,0
+288,1659,101,0
+289,1667,103,0
+290,0,103,8021
+291,1670,46,0
+292,1698,94,0
+293,1708,89,0
+294,1720,83,0
+295,1720,51,0
+296,0,0,8035
+297,0,0,8035
+298,0,0,8035
+299,0,0,8003
+300,0,0,8035
+301,0,0,8035
+302,0,0,8035
+303,0,0,8003
+304,0,0,8035
+305,0,0,8035
+306,0,0,8035
+307,0,0,8003
+308,1963,52,0
+309,1997,27,0
+310,0,0,8035
+311,1969,64,0
+312,0,0,8035
+313,2027,85,0
+314,2062,81,0
+315,0,0,8035
+316,0,0,8035
+317,804,78,0
+318,0,0,8003
+319,788,170,0
+320,784,202,0
+321,784,214,0
+322,785,216,0
+323,790,186,0
+324,793,140,0
+325,782,267,0
+326,804,194,0
+327,882,238,0
+328,887,248,0
+329,895,221,0
+330,913,233,0
+331,937,174,0
+332,0,0,8035
+333,3347,11,0
+334,0,0,8035
+335,3506,10,0
+336,0,0,8035
+337,3907,7,0
+338,0,0,8035
+339,3932,9,0
+340,0,0,8035
+341,4043,16,0
+342,4022,14,0
+343,3949,15,0
+344,3932,18,0
+345,3915,15,0
+346,3907,16,0
+347,3796,22,0
+348,3838,22,0
+349,3830,20,0
+350,3809,22,0
+351,3806,21,0
+352,3806,24,0
+353,3777,23,0
+354,3780,22,0
+355,3767,20,0
+356,3767,26,0
+357,3752,19,0
+358,3752,24,0
+359,3718,22,0
+ROTATION_SPEED,5.14
+
+testmode off
