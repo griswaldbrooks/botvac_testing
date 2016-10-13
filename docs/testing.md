@@ -42,7 +42,7 @@ codes, indexed by scan angle in degrees.
 Angle 0 points in the direction of the front of the robot.
 An example of the output of this command can be seen [here](example_outputs/lds_scan.txt).
 When plotted, it will produce the below image.
-
+![Botvac LDS sample scan.](example_outputs/lds_scan1.png)
 
 # Motion Commands <a name="motion_commands" />
 The can be moved by commanding each wheel to travel some linear distance,
