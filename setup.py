@@ -22,11 +22,7 @@ setup(name='botvac_tools',
       author_email='griswald.brooks@gmail.com',
       license='MIT',
       packages=['botvac_tools'],
-      install_requires=[
-        'argparse',
-        'matplotlib',
-        'numpy'
-        ],
+      install_requires=open('requirements.txt').readlines(),
       test_suite='nose.collector',
       tests_require=['nose', 'nose-cover3'],
       entry_points={
