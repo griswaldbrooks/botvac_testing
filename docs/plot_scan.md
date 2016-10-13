@@ -9,7 +9,7 @@ For example, when running the command on the file [lds_scan.txt](example_outputs
 $ plot_scan lds_scan.txt
 ```
 It will produce the following output
-![Single LDS scan image](example_output/lds_scan1.png)
+![Single LDS scan image](example_outputs/lds_scan1.png)
 
 Saving the output of the Botvac CLI after `getldsscan` is called is sufficient
 and should not require any manual processing.
@@ -18,7 +18,7 @@ For example, when running the command on the file [lds_scan_dirty1.txt](example_
 $ plot_scan lds_scan_dirty1.txt
 ```
 It will still produce the LDS scan.
-![Single LDS scan image from dirty.](example_output/lds_scan2.png)
+![Single LDS scan image from dirty.](example_outputs/lds_scan2.png)
 
 # Multiple Scans
 If the text file presented to `plot_scans` contains multiple scans,
