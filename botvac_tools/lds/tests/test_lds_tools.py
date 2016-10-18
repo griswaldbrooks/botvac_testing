@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from botvac_tools.lds_tools.lds_tools import Scan
+from botvac_tools.lds import Scan
 
 
 class TestScanObject(TestCase):

@@ -31,7 +31,7 @@ import argparse
 import matplotlib.pyplot as plt
 import numpy as np
 import sys
-from lds_tools import ScanParser
+from parser import ScanParser
 
 
 class ScanPlotter(object):
