@@ -18,7 +18,7 @@ a device driver.
 Linux
 -----
 Ubuntu 14.04 and 16.04 do not need special drivers to communicate with the
-robot. It will appear as a serial port, such as``/dev/ttyACM0``
+robot. It will appear as a serial port, such as ``/dev/ttyACM0``
 
 Windows
 -------
