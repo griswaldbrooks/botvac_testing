@@ -1,3 +1,3 @@
-from scan_parser import ScanParser
+from .scan_parser import ScanParser
 
 __all__ = ['ScanParser']
