@@ -32,6 +32,7 @@ from recommonmark.parser import CommonMarkParser
 extensions = [
     'sphinx.ext.pngmath',
     'sphinx.ext.viewcode',
+    'sphinx.ext.autodoc',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -39,7 +40,7 @@ templates_path = ['_templates']
 
 # Add markdown parser.
 source_parsers = {
-        '.md': CommonMarkParser
+        '.md': CommonMarkParser,
 }
 
 # The suffix of source filenames.

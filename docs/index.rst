@@ -7,13 +7,12 @@ Welcome to Botvac Tools's documentation!
 ========================================
 
 Contents:
-  - `Plot Scan <plot_scan.md>`_
-  - `Testing <testing.md>`_ 
 .. toctree::
-   :maxdepth: 2
-
-
-
+    :maxdepth: 2
+                    
+    testing
+    plot_scan
+                    
 Indices and tables
 ==================
 
