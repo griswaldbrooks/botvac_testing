@@ -24,7 +24,7 @@ setup(name='botvac_tools',
       packages=['botvac_tools'],
       install_requires=open('requirements.txt').readlines(),
       test_suite='nose.collector',
-      tests_require=['nose', 'nose-cover3'],
+      tests_require=['nose', 'nose-cover3', 'yaml'],
       entry_points={
         'console_scripts': ['plot_scan=lds_tools.plot_scan:main'],
         },
