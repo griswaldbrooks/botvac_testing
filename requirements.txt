@@ -1,4 +1,4 @@
 argparse
 matplotlib
 numpy
-serial
+pyserial
