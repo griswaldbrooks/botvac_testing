@@ -28,6 +28,7 @@
 # @file lds_tools.py Module for processing the output of a Neato Botvac LDS.
 
 import numpy as np
+import serial
 
 
 class Scan(object):
@@ -232,7 +233,7 @@ class ScanParser(object):
     @staticmethod
     def from_string(scan_string):
         """
-        Function to parse an LDS scan string into.
+        Function to parse an LDS scan string.
 
         Args:
             scan_string (str): String containing the laser scan.
@@ -299,3 +300,42 @@ class ScanParser(object):
                 pass
 
         return scans
+
+    @classmethod
+    def from_serial(cls, port_name, port_baud):
+        """
+        Function to parse an LDS scan string.
+
+        Args:
+            port_name (str): Name of the serial port botvac is connected to.
+            port_baud (str): Speed of the serial port botvac is connected to.
+
+        Returns:
+            Scan: The parsed Scan object.
+        """
+        scan = Scan()
+
+        # Open the serial port.
+        ser = serial.Serial(port_name, port_baud)
+
+        # Get scan.
+        ser.write('GetLDSScan\r')
+        
+        # Parsing tokens.
+        start_token = 'AngleInDegrees'
+        end_token = 'ROTATION_SPEED'
+        line = ''
+        while start_token not in line:
+            line = ser.readline()
+
+        # Parse serial port data into scan strings.
+        read_port = True
+        scan_string = str()
+        while read_port:
+            line = ser.readline()
+            if end_token in line:
+                read_port = False
+            else:
+                scan_string += line
+
+        return cls.from_string(scan_string)
