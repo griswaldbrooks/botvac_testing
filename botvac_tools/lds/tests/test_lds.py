@@ -38,7 +38,7 @@ class TestScanObject(TestCase):
         Method to test creation of Scan object.
         """
         scan = Scan()
-        self.assertTrue(isinstance(scan, Scan))
+        self.assertFalse(isinstance(scan, Scan))
 
     def test_getters(self):
         """
